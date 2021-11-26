@@ -1,0 +1,56 @@
+@use '../globals/colors' as *;
+@use '../util' as *;
+
+.header {
+  background: $bgGradient-intro;
+  height: rem(600);
+  border-bottom-left-radius: rem(100);
+
+  @include breakpoint-up(large) {
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 rem(24);
+    padding-top: rem(56);
+
+    @include breakpoint-up(large) {
+      margin: 0 rem(164);
+    }
+  }
+
+  &__logo {
+    width: rem(81.66);
+    height: rem(32);
+  }
+
+  &__hamburger-or-close {
+  }
+
+  &__links {
+  }
+
+  &__cta-buttons {
+  }
+
+  &__login {
+    @include button();
+    width: rem(43);
+    height: rem(18);
+    opacity: 0.75;
+    color: $white;
+    background: transparent;
+    margin-right: rem(32);
+  }
+
+  &__signup {
+    @include button();
+    &:hover {
+      background: $verylightred;
+      color: $white;
+    }
+  }
+}

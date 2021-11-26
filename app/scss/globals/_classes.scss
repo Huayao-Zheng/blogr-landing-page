@@ -1,0 +1,13 @@
+@use '../util/' as *;
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-destop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+@use 'colors' as *;
+@use '../util/functions' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+  background: $white;
+  font-size: rem(16);
+  color: $white;
+}

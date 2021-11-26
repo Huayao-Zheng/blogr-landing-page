@@ -1,0 +1,16 @@
+@use '../globals/colors' as *;
+@use 'functions' as *;
+
+@mixin button() {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: rem(16);
+  background: #fff;
+  color: $lightred;
+  border-radius: rem(28);
+  border: none;
+  padding: 0;
+  width: rem(137);
+  height: rem(48);
+  transition: all 0.2s ease-in-out;
+}
